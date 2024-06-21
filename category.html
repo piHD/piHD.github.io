@@ -18,18 +18,66 @@
 	  <span style="font-size: 20px;">畫面未正常顯示，請使用Edge開啟</span>
 	</div>
 	
+	<div id="view" style="display:block;">
 	<p style="color:white; font-size:20px; margin: 10px;">Category</p>
 	<div class="sty">
-	<div>
-	  scenery
+		<div class="image">
+		  <button onclick="SC()">scenery
+		  <img src="pic/scenery_02.JPG" />
+		  </button>
+		</div>
+		<div class="image">
+		  <button onclick="AN()">animal
+		  <img src="pic/animal_01.JPG" />
+		  </button>
+		</div>
+		<div class="image">
+		  <button onclick="PF()">perform
+		  <img src="pic/perform_01.JPG" >
+		  </button>
+		</div>
+    </div>
 	</div>
-	<div>
-	  animal
+	
+	<div id="viewSC" style="display:none;">
+      <p style="color:white; font-size:20px; margin: 10px;">Scenery</p>
+	  <div class="image">
+	    <img src="pic/scenery_01.JPG" />
+		<img src="pic/scenery_02.JPG" />
+		</div>
 	</div>
-	<div>
-	  sport
+	
+	<div id="viewAN" style="display:none;">
+      <p style="color:white; font-size:20px; margin: 10px;">Animal</p>
+	  <div class="image">
+	    <img src="pic/animal_01.JPG" />
+		<img src="pic/animal_02.JPG" />
+		<img src="pic/animal_03.JPG" />
+		</div>
 	</div>
-  
-    
+	
+	<div id="viewPF" style="display:none;">
+      <p style="color:white; font-size:20px; margin: 10px;">Perform</p>
+	  <div class="image">
+	    <img src="pic/perform_01.JPG" />
+		<img src="pic/perform_02.JPG" />
+		<img src="pic/perform_03.JPG" />
+		</div>
+	</div>
+	
+	<script>
+	  function SC(){
+	    document.getElementById("view").style.display="none";
+		document.getElementById("viewSC").style.display="block";    
+	  }
+	  function AN(){
+	    document.getElementById("view").style.display="none";
+		document.getElementById("viewAN").style.display="block";    
+	  }
+	  function PF(){
+	    document.getElementById("view").style.display="none";
+		document.getElementById("viewPF").style.display="block";    
+	  }
+	</script>
   </body>
 </html>

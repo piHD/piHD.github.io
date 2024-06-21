@@ -36,3 +36,11 @@ a{
   background-color: #E1E1E1;
   box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
 }
+.sty{
+  margin: 5px 5px 5px 100px;
+  display: flex;
+  flex-direction: column;
+}
+.image img{
+  max-width: 100%;
+}
